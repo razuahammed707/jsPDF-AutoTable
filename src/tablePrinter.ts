@@ -4,7 +4,7 @@ import { Column, Table } from './models'
 
 export interface ColumnFitInPageResult {
   colIndexes: number[]
-  columns: Column[],
+  columns: Column[]
   lastIndex: number
 }
 

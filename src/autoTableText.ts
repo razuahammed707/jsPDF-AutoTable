@@ -62,7 +62,24 @@ export default function (
       align: 'justify',
     })
   } else {
-    doc.text(text, x, y)
+    // doc.text(text, x, y);
+
+    let count = 4
+
+    if (text.length > 1) {
+      for (let i = 0; i < text.length; i++) {
+        if (i === 0) {
+          doc.setFont('Helvetica', 'bold')
+          doc.text(text[i], x, y)
+          doc.setFont('Helvetica', 'regular')
+        } else {
+          doc.text(text[i], x, y + count)
+          count += 4
+        }
+      }
+    } else {
+      doc.text(text, x, y)
+    }
   }
 
   return doc

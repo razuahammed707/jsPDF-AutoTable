@@ -1,5 +1,5 @@
 {
-  "name": "jspdf-autotable",
+  "name": "autotable",
   "version": "3.5.25",
   "description": "Generate pdf tables with javascript (jsPDF plugin)",
   "main": "dist/jspdf.plugin.autotable.js",

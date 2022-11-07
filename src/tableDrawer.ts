@@ -88,10 +88,8 @@ function printTableWithHorizontalPageBreak(
   cursor: { x: number; y: number }
 ) {
   // calculate width of columns and render only those which can fit into page
-  const allColumnsCanFitResult: ColumnFitInPageResult[] = tablePrinter.calculateAllColumnsCanFitInPage(
-    doc,
-    table
-  )
+  const allColumnsCanFitResult: ColumnFitInPageResult[] =
+    tablePrinter.calculateAllColumnsCanFitInPage(doc, table)
 
   allColumnsCanFitResult.map(
     (colsAndIndexes: ColumnFitInPageResult, index: number) => {
